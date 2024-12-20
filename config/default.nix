@@ -13,6 +13,7 @@
     ./plugins/nvim-cmp.nix
     ./plugins/gitsigns.nix
     ./plugins/dashboard.nix
+    ./plugins/lazygit.nix
   ];
 
   globals = {
