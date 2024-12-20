@@ -8,6 +8,7 @@
     ./plugins/conform.nix
     ./plugins/treesitter.nix
     ./plugins/lsp.nix
+    ./plugins/telescope.nix
   ];
 
   globals = {
