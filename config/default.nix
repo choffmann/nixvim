@@ -14,6 +14,8 @@
     ./plugins/gitsigns.nix
     ./plugins/dashboard.nix
     ./plugins/lazygit.nix
+
+    ./develop
   ];
 
   globals = {
