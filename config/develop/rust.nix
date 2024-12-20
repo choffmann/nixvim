@@ -10,4 +10,6 @@
   plugins.lint.lintersByFt = {
       rust = [ "clippy" ];
   };
+
+  # TODO: Add formatter
 }

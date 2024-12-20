@@ -14,4 +14,6 @@
   plugins.lint.lintersByFt = {
       go = [ "golangci-lint" ];
   };
+
+  # TODO: Add formatter
 }
