@@ -9,6 +9,8 @@
     ./plugins/treesitter.nix
     ./plugins/lsp.nix
     ./plugins/telescope.nix
+    ./plugins/mini.nix
+    ./plugins/nvim-cmp.nix
   ];
 
   globals = {
