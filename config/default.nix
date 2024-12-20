@@ -11,6 +11,7 @@
     ./plugins/telescope.nix
     ./plugins/mini.nix
     ./plugins/nvim-cmp.nix
+    ./plugins/gitsigns.nix
   ];
 
   globals = {
