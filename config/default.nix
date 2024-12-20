@@ -61,7 +61,6 @@
     #  See `:help 'list'`
     #  See `:help 'listchars'`
     # list = true;
-    # NOTE: .__raw here means that this field is raw lua code
     # listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
 
     # Preview subsitutions live, as you type!
@@ -75,6 +74,9 @@
 
     # Set highlight on search, but clear on pressing <Esc> in normal mode
     hlsearch = true;
+
+    expandtab = true;
+    softtabstop = 2;
   };
 
   keymaps = [
@@ -218,6 +220,24 @@
       action = ":m '<-2<CR>gv=gv";
       options = { desc = "Move line up"; };
     }
+    {
+      mode = "n";
+      key = "<Tab>";
+      action = ">>";
+      options = {
+        desc = "Indent line";
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<S-Tab>";
+      action = "<<";
+      options = {
+        desc = "Unindent line";
+        noremap = true;
+      };
+    }
   ];
 
   autoCmd = [
@@ -231,6 +251,13 @@
       '';
     }
   ];
+
+  userCommands = {
+    W.command = "w";
+    Wa.command =  "wa";
+    Wqa.command =  "wqa";
+    Q.command = "q";
+  };
 
   plugins = {
     # Detect tabstop and shiftwidth automatically
