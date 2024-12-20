@@ -7,6 +7,7 @@
     ./plugins/which-key.nix
     ./plugins/conform.nix
     ./plugins/treesitter.nix
+    ./plugins/lsp.nix
   ];
 
   globals = {
@@ -100,30 +101,6 @@
       mode = "n";
       key = "<down>";
       action = "<Nop>";
-    }
-    {
-      mode = "n";
-      key = "[d";
-      action = "vim.diagnostic.goto_prev";
-      options = { desc = "Go to previous [D]iagnostic message"; };
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action = "vim.diagnostic.goto_next";
-      options = { desc = "Go to next [D]iagnostic message"; };
-    }
-    {
-      mode = "n";
-      key = "<A-Space>";
-      action = "vim.diagnostic.open_float";
-      options = { desc = "Show diagnostics [E]rror messages"; };
-    }
-    {
-      mode = "n";
-      key = "<leader>q";
-      action = "vim.diagnostic.setloclist";
-      options = { desc = "Open diagnostic [Q]uickfix list"; };
     }
     {
       mode = "n";
