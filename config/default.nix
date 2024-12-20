@@ -6,6 +6,7 @@
     ./plugins/oil.nix
     ./plugins/which-key.nix
     ./plugins/conform.nix
+    ./plugins/treesitter.nix
   ];
 
   globals = {
