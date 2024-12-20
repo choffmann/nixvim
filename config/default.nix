@@ -12,6 +12,7 @@
     ./plugins/mini.nix
     ./plugins/nvim-cmp.nix
     ./plugins/gitsigns.nix
+    ./plugins/dashboard.nix
   ];
 
   globals = {
