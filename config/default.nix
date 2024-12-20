@@ -4,6 +4,7 @@
   imports = [ 
     ./colorschemes.nix
     ./plugins/oil.nix
+    ./plugins/which-key.nix
   ];
 
   globals = {
