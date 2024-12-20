@@ -5,9 +5,9 @@
     settings = {
       view_options.show_hidden = true;
       float.border = "rounded";
-    };
-    keymaps = {
-      "y." = "actions.copy_entry_path";
+      keymaps = {
+        "y." = "actions.copy_entry_path";
+      };
     };
   };
 
