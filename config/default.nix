@@ -5,6 +5,7 @@
     ./colorschemes.nix
     ./plugins/oil.nix
     ./plugins/which-key.nix
+    ./plugins/conform.nix
   ];
 
   globals = {
@@ -59,9 +60,9 @@
     # Sets how neovim will display certain whitespace characters in the editor
     #  See `:help 'list'`
     #  See `:help 'listchars'`
-    list = true;
+    # list = true;
     # NOTE: .__raw here means that this field is raw lua code
-    listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
+    # listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
 
     # Preview subsitutions live, as you type!
     inccommand = "split";
