@@ -14,6 +14,7 @@
     ./plugins/gitsigns.nix
     ./plugins/dashboard.nix
     ./plugins/lazygit.nix
+    ./plugins/tmux.nix
 
     ./develop
   ];
