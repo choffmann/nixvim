@@ -1,7 +1,6 @@
-{pkgs, ...}:
-{
+{pkgs, ...}: {
   # Import all your configuration modules here
-  imports = [ 
+  imports = [
     ./colorschemes.nix
     ./plugins/oil.nix
     ./plugins/which-key.nix
@@ -105,7 +104,7 @@
     {
       mode = "n";
       key = "<up>";
-     action = "<Nop>";
+      action = "<Nop>";
     }
     {
       mode = "n";
@@ -116,97 +115,97 @@
       mode = "n";
       key = "<C-h>";
       action = "<C-w><C-h>";
-      options = { desc = "Move focus to the left window"; };
+      options = {desc = "Move focus to the left window";};
     }
     {
       mode = "n";
       key = "<C-l>";
       action = "<C-w><C-l>";
-      options = { desc = "Move focus to the right window"; };
+      options = {desc = "Move focus to the right window";};
     }
     {
       mode = "n";
       key = "<C-j>";
       action = "<C-w><C-j>";
-      options = { desc = "Move focus to the lower window"; };
+      options = {desc = "Move focus to the lower window";};
     }
     {
       mode = "n";
       key = "<C-k>";
       action = "<C-w><C-k>";
-      options = { desc = "Move focus to the upper window"; };
+      options = {desc = "Move focus to the upper window";};
     }
     {
       mode = "n";
       key = "<C-d>";
       action = "<C-d>zz";
-      options = { desc = "Move down half a page"; };
+      options = {desc = "Move down half a page";};
     }
     {
       mode = "n";
       key = "<C-u>";
       action = "<C-u>zz";
-      options = { desc = "Move up half a page"; };
+      options = {desc = "Move up half a page";};
     }
     {
       mode = "n";
       key = "n";
       action = "nzzzv";
-      options = { desc = "Move to next search result and center it"; };
+      options = {desc = "Move to next search result and center it";};
     }
     {
       mode = "n";
       key = "N";
       action = "Nzzzv";
-      options = { desc = "Move to previous search result and center it"; };
+      options = {desc = "Move to previous search result and center it";};
     }
     {
       mode = "n";
       key = "<leader>zig";
       action = "<cmd>LspRestart<cr>";
-      options = { desc = "Restart the LSP server"; };
+      options = {desc = "Restart the LSP server";};
     }
     {
       mode = "x";
       key = "<leader>p";
       action = "\"_dP";
-      options = { desc = "Paste from system clipboard"; };
+      options = {desc = "Paste from system clipboard";};
     }
     {
-    mode = ["n" "v"];
+      mode = ["n" "v"];
       key = "<leader>y";
       action = "\"+y";
-      options = { desc = "Yank to system clipboard"; };
+      options = {desc = "Yank to system clipboard";};
     }
     {
       mode = "n";
       key = "<leader>Y";
       action = "\"+Y";
-      options = { desc = "Yank to system clipboard"; };
+      options = {desc = "Yank to system clipboard";};
     }
     {
       mode = ["n" "v"];
       key = "<leader>d";
       action = "\"_d";
-      options = { desc = "Delete without yanking"; };
+      options = {desc = "Delete without yanking";};
     }
     {
       mode = "n";
       key = "<leader>s";
       action = ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>";
-      options = { desc = "Substitute word under cursor"; };
+      options = {desc = "Substitute word under cursor";};
     }
     {
       mode = ["n" "v"];
       key = "<A-j>";
       action = ":m '>+1<CR>gv=gv";
-      options = { desc = "Move line down"; };
+      options = {desc = "Move line down";};
     }
     {
       mode = ["n" "v"];
       key = "<A-k>";
       action = ":m '<-2<CR>gv=gv";
-      options = { desc = "Move line up"; };
+      options = {desc = "Move line up";};
     }
     {
       mode = "n";
@@ -226,6 +225,15 @@
         noremap = true;
       };
     }
+    {
+      mode = "t";
+      key = "<Esc>";
+      action = "<C-\\><C-n>";
+      options = {
+        desc = "Escape from terminal";
+        noremap = true;
+      };
+    }
   ];
 
   autoCmd = [
@@ -242,8 +250,8 @@
 
   userCommands = {
     W.command = "w";
-    Wa.command =  "wa";
-    Wqa.command =  "wqa";
+    Wa.command = "wa";
+    Wqa.command = "wqa";
     Q.command = "q";
   };
 
