@@ -113,6 +113,11 @@
     }
     {
       mode = "n";
+      key = "<Esc>";
+      action = "<cmd>nohlsearch<cr>";
+    }
+    {
+      mode = "n";
       key = "<C-h>";
       action = "<C-w><C-h>";
       options = {desc = "Move focus to the left window";};
