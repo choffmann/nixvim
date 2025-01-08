@@ -15,6 +15,7 @@
     ./plugins/dashboard.nix
     ./plugins/lazygit.nix
     ./plugins/tmux.nix
+    ./plugins/dbclient.nix
 
     ./develop
   ];
