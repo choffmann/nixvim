@@ -8,6 +8,10 @@
     extensions = {
       fzf-native.enable = true;
       ui-select.enable = true;
+      live-grep-args.enable = true;
+      file-browser.enable = false;
+      frecency.enable = true; # A telescope.nvim extension that offers intelligent prioritization when selecting files from your editing history.
+      manix.enable = true; # A fast documentation searcher for Nix
     };
 
     # You can put your default mappings / updates / etc. in here
@@ -86,6 +90,9 @@
     };
     settings = {
       extensions.__raw = "{ ['ui-select'] = { require('telescope.themes').get_dropdown() } }";
+      layout_config = {
+        promt_position = "top";
+      };
     };
   };
 
